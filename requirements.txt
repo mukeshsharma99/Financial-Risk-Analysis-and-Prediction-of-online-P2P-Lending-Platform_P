@@ -1,0 +1,11 @@
+Flask==2.2.5
+matplotlib==3.7.1
+pandas==2.0.1
+pipeline==0.1.0
+plotly==5.17.0
+scikit-learn==1.5.1
+scipy==1.11.2
+seaborn==0.12.2
+virtualenv==20.24.3
+xgboost==2.0.0
+zipp==3.16.2

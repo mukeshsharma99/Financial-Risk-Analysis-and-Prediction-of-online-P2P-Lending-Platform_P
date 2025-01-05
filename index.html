@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Prediction App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f); /* Warm gradient background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #e57373; /* Soft red color for the title */
+        }
+        p {
+            text-align: center;
+            font-size: 1.1em;
+            color: #555; /* Darker gray for better readability */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+            color: #ff7043; /* Orange color for labels */
+        }
+        input[type="number"] {
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ff7043;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 300px;
+            background-color: #ffe0b2; /* Light orange background for inputs */
+            color: #333; /* Dark text color for readability */
+        }
+        input[type="submit"] {
+            background-color: #ff7043; /* Orange background color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        input[type="submit"]:hover {
+            background-color: #f4511e; /* Darker orange for hover effect */
+        }
+        .predictions {
+            margin-top: 20px;
+            padding: 15px;
+            background: #ffe0b2; /* Light orange background for predictions */
+            border-left: 5px solid #ff7043;
+            border-radius: 4px;
+        }
+        .predictions h2 {
+            margin-top: 0;
+            color: #e57373; /* Soft red color for headings */
+        }
+        .predictions p {
+            font-size: 1.1em;
+            margin: 5px 0;
+            color: #555; /* Dark gray for prediction text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Prediction App</h1>
+        <p>This app predicts the Loan Status, Expected Loan Amount (ELA), and Equated Monthly Installment (EMI) based on the input parameters.</p>
+        <form method="post">
+            <label for="emi">EMI:</label>
+            <input type="number" step="0.01" name="emi" id="emi" required><br>
+            <label for="ela">ELA:</label>
+            <input type="number" step="0.01" name="ela" id="ela" required><br>
+            <label for="roi">ROI:</label>
+            <input type="number" step="0.01" name="roi" id="roi" required><br>
+            <input type="submit" value="Predict">
+        </form>
+
+        {% if loan_status is not none %}
+        <div class="predictions">
+            <h2>Predictions:</h2>
+            <p><strong>Predicted Loan Status:</strong> {{ loan_status }}</p>
+            <p><strong>Predicted ELA:</strong> {{ ela_pred }}</p>
+            <p><strong>Predicted EMI:</strong> {{ emi_pred }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
