@@ -8,7 +8,7 @@ application = Flask(__name__)
 classification_pipeline = joblib.load('classification_pipeline.pkl')
 regression_pipeline_ela = joblib.load('regression_pipeline_ela.pkl')
 regression_pipeline_emi = joblib.load('regression_pipeline_emi.pkl')
-label_encoder = joblib.load('label_encoder.pkl')
+label_encoder = joblib.load('label_encoder.pkl')  
 
 # Define a mapping for loan status
 loan_status_mapping = {0: 'Not Approved', 1: 'Approved'}
