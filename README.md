@@ -12,7 +12,7 @@ that predicts the probability of default by considering more information related
 clients rather than just evaluating their credit score. In this project , we have done the 
 predictive analysis of the parameters like(** Loan Status ** , ** EMI**,**PROI**,**ELA**) 
 in an Online P2P lending market related to determinants of performance predictability by 
-conceptualizing its financial benefits to make further predictions whether one can 
+conceptualizing its financial benefits to make further predictions whether one can  
 successfully predict which loans will default. There is thus a significant financial incentive 
 to accurately predicting which of the loans would eventually default or not.  
 
