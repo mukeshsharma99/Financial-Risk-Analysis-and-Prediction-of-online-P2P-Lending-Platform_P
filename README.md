@@ -3,7 +3,7 @@ Lending Platform
 Peer-To-Peer (P2P) lending platforms are online services provided by financial 
 institutions as an intermediary to initiate loans for private individuals. Loans for borrowers 
 are funded by multiple investors, bound with agreed-upon terms and conditions, with 
-profits generated from the interest made on the loans as the borrowers are given a certain 
+profits generated from the interest made on the loans as the borrowers are given a certain  
 duration to pay back the loan and interest. P2P lending has gained popularity for personal, 
 small business start-ups allowing individuals and businesses to loan money directly from 
 investors or lenders without going through the strict requirements and criteria of traditional 
