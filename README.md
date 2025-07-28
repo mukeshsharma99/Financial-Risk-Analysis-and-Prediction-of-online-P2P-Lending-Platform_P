@@ -6,7 +6,7 @@ are funded by multiple investors, bound with agreed-upon terms and conditions, w
 profits generated from the interest made on the loans as the borrowers are given a certain  
 duration to pay back the loan and interest. P2P lending has gained popularity for personal, 
 small business start-ups allowing individuals and businesses to loan money directly from 
-investors or lenders without going through the strict requirements and criteria of traditional 
+investors or lenders without going through the strict requirements and criteria of traditional    
 banks and financial institutions.This study presents a supervised machine learning model 
 that predicts the probability of default by considering more information related to the 
 clients rather than just evaluating their credit score. In this project , we have done the 
